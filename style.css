@@ -30,19 +30,41 @@ h4 {
 }
 
 img {
-  display: block; 
+  display: block;
 }
 
-/* ORIGINAL:
 @media (min-width: 960px) {
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
-} */
+}
 
+/* Custom CSS starts here */
 
-@media (max-width: 960px) {
-  .header {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* MOBILE HERE */
+.desktop {
+  display: none;
+}
+
+.mobile {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+img {
+  width: 100%;
+}
+
+/* DESKTOP HERE */
+
+@media (min-width: 960px) {
+  
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
 }

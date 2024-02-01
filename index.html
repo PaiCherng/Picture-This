@@ -20,48 +20,22 @@
       <img src="images/refs/00src-museum.jpg" alt="placeholder"> -->
 
     <!-- Below 960 (Landscape)-->
-    <section class="mobile">
-      <picture>
-        <source media="(min-width: 320px)" srcset="images/land-320.png, images/land-640.png 2x, images/land-960.png 3x">
+    <!-- <div> -->
+      <picture class="mobile">
+        <source media="(min-width: 320px)" 
+                srcset="images/land-320.png, images/land-640.png 2x, images/land-960.png 3x">
         <source media="(min-width: 480px)"
           srcset="images/land-480.png, images/land-960.png 2x, images/land-1440.png 3x">
         <source media="(min-width: 720px)"
           srcset="images/land-720.png, images/land-1440.png 2x, images/land-2160.png 3x">
-        <source media="(min-width: 960px)"
+        <source media="(max-width: 960px)"
           srcset="images/land-960.png, images/land-1920.png 2x, images/land-2880.png 3x">
         <img src="images/land-2880.png" alt="Photo of museum interior">
       </picture>
+    <!-- </div> -->
 
-      <!-- <img
-  srcset="images/land-320vp-320.png,
-          images/land-320vp-640.png 2x,
-          images/land-320vp-960.png 3x,
-          images/land-480vp-480.png,
-          images/land-480vp-960.png 2x,
-          images/land-480vp-1440.png 3x,
-          images/land-720vp-720.png,
-          images/land-720vp-1440.png 2x,
-          images/land-720vp-2160.png 3x,
-          images/land-960vp-960.png,
-          images/land-960vp-1920.png 2x,
-          images/land-960vp-2880.png 3x"
-  src="images/land-960vp-2880.png"
-  alt="Photo of museum interior"/> -->
-    
-      <!-- REF CODE FROM IMDAK LINK
-      
-      <img
-        srcset="
-          elva-fairy-320w.jpg, 
-          elva-fairy-480w.jpg 1.5x, 
-          elva-fairy-640w.jpg 2x"
-          src="elva-fairy-640w.jpg"
-        alt="Elva dressed as a fairy" /> -->
-    
-    </section>
-
-    <section class="desktop">
-      <picture>
+    <!-- <div> -->
+      <picture class="desktop">
         <source media="(min-width: 960px)"
           srcset="images/square-480.jpg, images/square-960.jpg 2x, images/square-1440.jpg 3x">
         <source media="(min-width: 1280px)"
@@ -84,7 +58,7 @@
       src="images/square-1600vp-2400.jpg"
       alt="Photo of museum interior" /> -->
     
-    </section>
+      <!-- </div> -->
   
   </header>
 </body>
