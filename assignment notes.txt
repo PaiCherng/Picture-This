@@ -1,0 +1,48 @@
+<!-- ASSIGNMENT & NOTES:
+
+  Prof: you can get away with 3 images (for each orientation), so 6 images total = landsacpe 3 image, square 3 images (apperently)
+  but the fullproof way is yoou still need to generate 21 images
+
+  reference from https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
+  section: "Resolution switching: Same size, different resolutions"
+
+  code to ref:
+  <picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+  </picture>
+
+  Note: watch the video from IMDAC -> https://imdac.github.io/modules/html/responsive-images/
+
+  So the Img tag version is adding two more "srcset" and "sizes"
+  but the <picture> way is easier to keep track of but it does have more code.
+
+    empty:
+    <picture>
+        <source srcset="" media="" />
+        <source srcset="" media="" />
+        <source srcset="" media="" />
+        <source srcset="" media="" />
+        <img src="" alt="" />
+    </picture>
+
+    so the "order that matters" is the order of images in cascading order, not the actual attribute tags within the <>s of the tag.
+
+    Filled:
+        <picture>
+          <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+          <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+          <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+        </picture>
+
+        you would need CSS to make this work.
+
+        But if you do it the img tag way, than seems like you won't need CSS becasue the media query is inheriently inside the html code.
+  
+The following requirements must be met in order to complete the assignment successfully:
+Using the image tables below, determine which image sizes will be necessary. There will be two image ratios: landscape and square.
+
+Add the appropriate HTML / CSS, so that if the viewport is smaller than 960px, the image will be displayed in landscape and at an adequate resolution.
+Add the appropriate HTML / CSS, so that if the viewport is 960px or larger, the image displayed is square and at an adequate resolution.
+Setup the GitHub Pages website for your forked repository -->

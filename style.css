@@ -30,8 +30,15 @@ h4 {
 }
 
 img {
-  display: block;
+  display: block; 
 }
+
+/* ORIGINAL:
+@media (min-width: 960px) {
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
 
 
 @media (min-width: 960px) {
