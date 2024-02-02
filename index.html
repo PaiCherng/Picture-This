@@ -15,14 +15,32 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    
+
     <!-- ORIGINAL IMG HTML:
       <img src="images/refs/00src-museum.jpg" alt="placeholder"> -->
 
-    <!-- Below 960 (Landscape)-->
-    <!-- <div> -->
-      <picture class="mobile">
-        <source media="(min-width: 320px)" 
+      <picture>
+        <source media="(max-width: 320px)"
+                srcset="images/land-320.png, images/land-640.png 2x, images/land-960.png 3x">
+        <source media="(max-width: 480px)"
+                srcset="images/land-480.png, images/land-960.png 2x, images/land-1440.png 3x">
+        <source media="(max-width: 720px)"
+                srcset="images/land-720.png, images/land-1440.png 2x, images/land-2160.png 3x">
+        <source media="(max-width: 959px)"
+                srcset="images/land-960.png, images/land-1920.png 2x, images/land-2880.png 3x">
+        <!-- Square starts here -->
+        <source media="(max-width: 960px)"
+                srcset="images/square-480.jpg, images/square-960.jpg 2x, images/square-1440.jpg 3x">
+        <source media="(max-width: 1280px)"
+                srcset="images/square-640.jpg, images/square-1280.jpg 2x, images/square-1920.jpg 3x">
+        <!-- Largest size doesn't need a media query -->     
+        <source srcset="images/square-800.jpg, images/square-1600.jpg 2x, images/square-2400.jpg 3x">
+        <img src="images/land-320.png" alt="Photo of museum interior" width="100%" />
+      </picture>
+
+    <!-- OLD (wrong) VERSION below (with CSS)-->
+      <!-- <picture class="mobile">
+        <source media="(min-width: 320px)"
                 srcset="images/land-320.png, images/land-640.png 2x, images/land-960.png 3x">
         <source media="(min-width: 480px)"
           srcset="images/land-480.png, images/land-960.png 2x, images/land-1440.png 3x">
@@ -32,9 +50,7 @@
           srcset="images/land-960.png, images/land-1920.png 2x, images/land-2880.png 3x">
         <img src="images/land-2880.png" alt="Photo of museum interior">
       </picture>
-    <!-- </div> -->
 
-    <!-- <div> -->
       <picture class="desktop">
         <source media="(min-width: 960px)"
           srcset="images/square-480.jpg, images/square-960.jpg 2x, images/square-1440.jpg 3x">
@@ -43,23 +59,8 @@
         <source media="(min-width: 1600px)"
           srcset="images/square-800.jpg, images/square-1600.jpg 2x, images/square-2400.jpg 3x">
         <img src="images/square-2400.jpg" alt="Photo of museum interior">
-      </picture>
+      </picture> -->
 
-      <!-- <img
-      srcset="images/square-960vp-480.jpg,
-              images/square-960vp-960.jpg 2x,
-              images/square-960vp-1440.jpg 3x,
-              images/square-1280vp-640.jpg,
-              images/square-1280vp-1280.jpg 2x,
-              images/square-1280vp-1920.jpg 3x,
-              images/square-1600vp-800.jpg,
-              images/square-1600vp-1600.jpg 2x,
-              images/square-1600vp-2400.jpg 3x"
-      src="images/square-1600vp-2400.jpg"
-      alt="Photo of museum interior" /> -->
-    
-      <!-- </div> -->
-  
   </header>
 </body>
 

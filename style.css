@@ -39,9 +39,9 @@ img {
   }
 }
 
-/* Custom CSS starts here */
+/* Custom CSS starts here This 
 
-/* MOBILE HERE */
+/* MOBILE HERE 
 .desktop {
   display: none;
 }
@@ -54,7 +54,7 @@ img {
   width: 100%;
 }
 
-/* DESKTOP HERE */
+/* DESKTOP HERE 
 
 @media (min-width: 960px) {
   
@@ -67,4 +67,4 @@ img {
   grid-template-columns: repeat(1, 1fr);
 }
 
-}
+} */
